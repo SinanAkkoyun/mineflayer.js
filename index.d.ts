@@ -208,8 +208,6 @@ export interface Bot extends TypedEmitter<BotEvents> {
   tablist: Tablist
   registry: Registry
 
-  lookSensitvity: number
-
   connect: (options: BotOptions) => void
 
   supportFeature: IndexedData['supportFeature']
