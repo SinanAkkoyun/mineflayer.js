@@ -208,6 +208,8 @@ export interface Bot extends TypedEmitter<BotEvents> {
   tablist: Tablist
   registry: Registry
 
+  lookSensitvity: number
+
   connect: (options: BotOptions) => void
 
   supportFeature: IndexedData['supportFeature']
@@ -539,6 +541,7 @@ export interface PhysicsOptions {
   playerHeight: number
   jumpSpeed: number
   yawSpeed: number
+  pitchSpeed: number
   sprintSpeed: number
   maxGroundSpeedSoulSand: number
   maxGroundSpeedWater: number
